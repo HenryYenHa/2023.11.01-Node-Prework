@@ -1,0 +1,4 @@
+Window and document keyword does not exist in Node.
+
+Node is a runtime environment using the V8 (Chrome's) compiler of JS.
+
