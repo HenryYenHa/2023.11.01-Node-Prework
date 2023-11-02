@@ -1,4 +1,24 @@
+https://www.youtube.com/watch?v=TlB_eWDSMt4
+
 Window and document keyword does not exist in Node.
 
 Node is a runtime environment using the V8 (Chrome's) compiler of JS.
 
+setTimeOut, setInterval and console are technically part of window but it is available on Node as well.
+Instead you call global.
+Ex: 
+global.console.log("Message here");
+
+but simply typing:
+console.log("....");
+is entirely acceptable.
+
+Exporting variables and functions as they are often private:
+
+module.exports.log = log;
+
+Would export a variable/function called "log". 
+
+module.exports.endPoint = URL;
+
+Would export a variable/function called URL on ourside and on the user side would eb called "endPoint".
